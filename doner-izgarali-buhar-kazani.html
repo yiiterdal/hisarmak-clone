@@ -1498,480 +1498,109 @@ footer a {
       <div class="hkc-actions">
         <button type="button" class="hkc-btn hkc-btn-primary" data-hkc-save>Tercihlerimi Kaydet</button>
       </div>
+      <div class="topbar-right"><span>Kahramanmaraş · Tekirdağ</span></div>
     </div>
   </div>
-</div>
-<script type="text/javascript" id="hisarmak-kvkk-cookie-js" data-no-optimize="1" data-no-minify="1" data-no-defer="1" data-cfasync="false">
-(function(){
-  var key="hisarmak_cookie_consent";
-  var version="2026-06-16-hisarmak";
-  var root=document.getElementById('hisarmak-cookie');
-  var panel=document.getElementById('hkc-panel');
-  var analytics=document.getElementById('hkc-analytics');
-  var marketing=document.getElementById('hkc-marketing');
-  var timer=null;
-  var clickTimer=null;
-  var clickMinimizeReady=false;
-  var minimizedOnce=false;
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">H</span>
+        <span class="logo-text"><strong>HİSARMAK</strong><span>Industrial Systems</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Menü"><span></span><span></span><span></span></button>
+      <ul class="nav">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li>
+          <a href="hakkimizda.html">Kurumsal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="dropdown">
+            <a href="hakkimizda.html">Hakkımızda</a>
+            <a href="sertifikalar.html">Sertifikalar</a>
+            <a href="kariyer.html">Kariyer</a>
+            <a href="katalog.html">Katalog</a>
+          </div>
+        </li>
+        <li>
+          <a href="endustriyel-kazan-sistemleri.html">Ürünler <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="dropdown">
+            <a href="buhar-kazani.html">Buhar Kazanı</a>
+            <a href="buhar-jeneratoru.html">Buhar Jeneratörü</a>
+            <a href="kizgin-yag-kazani.html">Kızgın Yağ Kazanı</a>
+            <a href="sicak-su-kazani.html">Sıcak Su Kazanı</a>
+            <a href="baca-ve-filtre-sistemleri.html">Baca ve Filtre</a>
+            <a href="ozel-tank-imalati.html">Özel Tank İmalatı</a>
+            <a href="su-yumusatma-sistemleri.html">Su Yumuşatma</a>
+            <a href="yardimci-ekipmanlar.html">Yardımcı Ekipmanlar</a>
+            <a href="yakitlarimiz.html">Yakıtlarımız</a>
+          </div>
+        </li>
+        <li><a href="referanslar.html">Referanslar</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+      <a class="header-cta" href="buhar-kazani-talep-formu.html">Teklif Al</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Anasayfa</a><span>/</span><span>Döner Izgaralı Buhar Kazanı</span></div>
+        <h1>Döner Izgaralı Buhar Kazanı</h1>
+        <p>Katı yakıtta sürekli besleme ve dengeli yanma.</p>
+      </div>
+    </section>
+    <section class="section section-light">
+      <div class="container content-block reveal">
+<p>Döner ızgaralı sistemler, katı yakıtlı uygulamalarda sürekli besleme ve dengeli yanma sunar.</p>
+      </div>
+    </section>
 
-  window.dataLayer=window.dataLayer||[];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('consent','default',{
-    ad_storage:'denied',
-    ad_user_data:'denied',
-    ad_personalization:'denied',
-    analytics_storage:'denied',
-    functionality_storage:'granted',
-    security_storage:'granted'
-  });
-
-  function read(){
-    try {
-      var raw=localStorage.getItem(key);
-      if(!raw){return null;}
-      var data=JSON.parse(raw);
-      return data.version===version ? data : null;
-    } catch(e){ return null; }
-  }
-
-  function write(consent){
-    consent.version=version;
-    consent.date=(new Date()).toISOString();
-    localStorage.setItem(key,JSON.stringify(consent));
-    document.cookie=key+'='+encodeURIComponent(JSON.stringify(consent))+'; Max-Age=15552000; Path=/; SameSite=Lax';
-    apply(consent);
-  }
-
-  function accepted(consent,category){
-    return !!(consent && consent[category] === true);
-  }
-
-  function updateGoogleConsent(consent){
-    gtag('consent','update',{
-      analytics_storage: accepted(consent,'analytics') ? 'granted' : 'denied',
-      ad_storage: accepted(consent,'marketing') ? 'granted' : 'denied',
-      ad_user_data: accepted(consent,'marketing') ? 'granted' : 'denied',
-      ad_personalization: accepted(consent,'marketing') ? 'granted' : 'denied'
-    });
-  }
-
-  function loadScript(node){
-    var s=document.createElement('script');
-    Array.prototype.slice.call(node.attributes).forEach(function(attr){
-      if(attr.name==='type' || attr.name.indexOf('data-hkc-')===0){return;}
-      if(attr.name==='data-src'){s.setAttribute('src',attr.value);return;}
-      s.setAttribute(attr.name,attr.value);
-    });
-    s.text=node.text || node.textContent || '';
-    node.parentNode.insertBefore(s,node);
-    node.parentNode.removeChild(node);
-  }
-
-  function apply(consent){
-    updateGoogleConsent(consent || {});
-    document.documentElement.setAttribute('data-hisarmak-consent', JSON.stringify(consent || {}));
-    document.querySelectorAll('script[type="text/plain"][data-hkc-category]').forEach(function(node){
-      var category=node.getAttribute('data-hkc-category');
-      if(accepted(consent,category)){loadScript(node);}
-    });
-  }
-  function syncInputs(consent){
-    if(analytics){analytics.checked=!!(consent && consent.analytics);}
-    if(marketing){marketing.checked=!!(consent && consent.marketing);}
-  }
-
-  function minimize(){
-    if(root){
-      root.classList.add('is-minimized');
-      minimizedOnce=true;
-    }
-  }
-  function armMinimize(){
-    if(timer){clearTimeout(timer);}
-    if(!minimizedOnce){timer=setTimeout(minimize,8000);}
-  }
-  function armClickMinimize(){
-    if(clickTimer){clearTimeout(clickTimer);}
-    clickMinimizeReady=false;
-    clickTimer=setTimeout(function(){clickMinimizeReady=true;},3000);
-  }
-  function expand(){
-    if(timer){clearTimeout(timer);}
-    syncInputs(read());
-    if(root){root.classList.remove('is-minimized');}
-    armClickMinimize();
-  }
-  function show(){ if(root){root.setAttribute('aria-hidden','false');expand();armMinimize();} }
-  function hide(){ if(clickTimer){clearTimeout(clickTimer);} clickMinimizeReady=false; if(root){root.setAttribute('aria-hidden','false');root.classList.add('is-minimized');} }
-
-  window.HisarmakConsent = {
-    get: read,
-    open: show,
-    reset: function(){localStorage.removeItem(key);show();}
-  };
-
-  var current=read();
-  if(current){
-    syncInputs(current);
-    apply(current);
-    hide();
-  } else {
-    show();
-  }
-
-  document.addEventListener('click',function(e){
-    if(e.target.matches('[data-hkc-open]')){show();}
-    if(e.target.matches('[data-hkc-settings]')){expand();panel.classList.toggle('is-open');}
-    if(e.target.matches('[data-hkc-reject]')){write({necessary:true,analytics:false,marketing:false});hide();}
-    if(e.target.matches('[data-hkc-accept]')){write({necessary:true,analytics:true,marketing:true});hide();}
-    if(e.target.matches('[data-hkc-save]')){write({necessary:true,analytics:analytics.checked,marketing:marketing.checked});hide();}
-    if(root && clickMinimizeReady && root.getAttribute('aria-hidden')==='false' && !root.classList.contains('is-minimized') && !root.contains(e.target)){minimize();}
-  });
-})();
-</script>
-        <script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/motto/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
-</script>
-	<div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span></div>
-	<script type="text/javascript">
-	var timeout_result;
-	function show_wpcp_message(smessage)
-	{
-		if (smessage !== "")
-			{
-			var smessage_text = '<span>Alert: </span>'+smessage;
-			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
-			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
-			clearTimeout(timeout_result);
-			timeout_result = setTimeout(hide_message, 3000);
-			}
-	}
-	function hide_message()
-	{
-		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
-	}
-	</script>
-		<style type="text/css">
-	#wpcp-error-message {
-	    direction: ltr;
-	    text-align: center;
-	    transition: opacity 900ms ease 0s;
-	    z-index: 99999999;
-	}
-	.hideme {
-    	opacity:0;
-    	visibility: hidden;
-	}
-	.showme {
-    	opacity:1;
-    	visibility: visible;
-	}
-	.msgmsg-box-wpcp {
-		border:1px solid #f5aca6;
-		border-radius: 10px;
-		color: #555;
-		font-family: Tahoma;
-		font-size: 11px;
-		margin: 10px;
-		padding: 10px 36px;
-		position: fixed;
-		width: 255px;
-		top: 50%;
-  		left: 50%;
-  		margin-top: -10px;
-  		margin-left: -130px;
-  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-	}
-	.msgmsg-box-wpcp span {
-		font-weight:bold;
-		text-transform:uppercase;
-	}
-		.warning-wpcp {
-		background:#ffecec url('https://hisarmak.com.tr/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
-	}
-    </style>
-		<div data-elementor-type="popup" data-elementor-id="94122" class="elementor elementor-94122 elementor-location-popup" data-elementor-settings="{&quot;timing&quot;:[]}">
-					<div class="elementor-section-wrap">
-						<div class="elementor-element elementor-element-7ee0e81 e-flex e-con-boxed e-con e-parent" data-id="7ee0e81" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-1226294 elementor-widget elementor-widget-text-editor" data-id="1226294" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Ürünün fiyatı ve detayları için lütfen aşağıdaki formu doldurunuz.</p>						</div>
-				</div>
-				<div class="elementor-element elementor-element-ae74863 elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="ae74863" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
-				<div class="elementor-widget-container">
-					<form class="elementor-form" method="post" name="TR Teklif">
-			<input type="hidden" name="post_id" value="94122"/>
-			<input type="hidden" name="form_id" value="ae74863"/>
-			<input type="hidden" name="referer_title" value="Döner Izgaralı Buhar Kazanı | Katı Yakıtlı" />
-
-							<input type="hidden" name="queried_id" value="93017"/>
-			
-			<div class="elementor-form-fields-wrapper elementor-labels-above">
-								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_7a33e29 elementor-col-100 elementor-field-required">
-													<input size="1" type="text" name="form_fields[field_7a33e29]" id="form-field-field_7a33e29" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Ad Soyad" required="required" aria-required="true">
-											</div>
-								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-telefon elementor-col-100 elementor-field-required">
-													<input size="1" type="text" name="form_fields[telefon]" id="form-field-telefon" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Telefon" required="required" aria-required="true">
-											</div>
-								<div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-100">
-													<input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="E-mail">
-											</div>
-								<div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
-					<textarea class="elementor-field-textual elementor-field  elementor-size-md" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Mesajınız"></textarea>				</div>
-								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-					<button type="submit" class="elementor-button elementor-size-sm">
-						<span >
-															<span class=" elementor-button-icon">
-																										</span>
-																						<span class="elementor-button-text">Gönder</span>
-													</span>
-					</button>
-				</div>
-			</div>
-		</form>
-				</div>
-				</div>
-					</div>
-				</div>
-							</div>
-				</div>
-					<script type="text/javascript" >
-				const lazyloadRunObserver = () => {
-					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
-					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
-						entries.forEach( ( entry ) => {
-							if ( entry.isIntersecting ) {
-								let lazyloadBackground = entry.target;
-								if( lazyloadBackground ) {
-									lazyloadBackground.classList.add( 'e-lazyloaded' );
-								}
-								lazyloadBackgroundObserver.unobserve( entry.target );
-							}
-						});
-					}, { rootMargin: '200px 0px 200px 0px' } );
-					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
-						lazyloadBackgroundObserver.observe( lazyloadBackground );
-					} );
-				};
-				const events = [
-					'DOMContentLoaded',
-					'elementor/lazyload/observe',
-				];
-				events.forEach( ( event ) => {
-					document.addEventListener( event, lazyloadRunObserver );
-				} );
-			</script>
-			<script type="text/javascript" data-cfasync="false">
-            window.dFlipLocation = 'https://hisarmak.com.tr/wp-content/plugins/3d-flipbook-dflip-lite/assets/';
-            window.dFlipWPGlobal = {"text":{"toggleSound":"Turn on\/off Sound","toggleThumbnails":"Toggle Thumbnails","toggleOutline":"Toggle Outline\/Bookmark","previousPage":"Previous Page","nextPage":"Next Page","toggleFullscreen":"Toggle Fullscreen","zoomIn":"Zoom In","zoomOut":"Zoom Out","toggleHelp":"Toggle Help","singlePageMode":"Single Page Mode","doublePageMode":"Double Page Mode","downloadPDFFile":"Download PDF File","gotoFirstPage":"Goto First Page","gotoLastPage":"Goto Last Page","share":"Share","mailSubject":"I wanted you to see this FlipBook","mailBody":"Check out this site {{url}}","loading":"DearFlip: Loading "},"viewerType":"flipbook","moreControls":"download,pageMode,startPage,endPage,sound","hideControls":"","scrollWheel":"false","backgroundColor":"#777","backgroundImage":"","height":"auto","paddingLeft":"20","paddingRight":"20","controlsPosition":"bottom","duration":800,"soundEnable":"true","enableDownload":"true","showSearchControl":"false","showPrintControl":"false","enableAnnotation":false,"enableAnalytics":"false","webgl":"true","hard":"none","maxTextureSize":"1600","rangeChunkSize":"524288","zoomRatio":1.5,"stiffness":3,"pageMode":"0","singlePageMode":"0","pageSize":"0","autoPlay":"false","autoPlayDuration":5000,"autoPlayStart":"false","linkTarget":"2","sharePrefix":"flipbook-"};
-        </script>
-      <script type="text/javascript" data-minify="1" id="ekit-widget-scripts-js" src="https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=1782741995"></script>
-<script id="rate-my-post-js-extra">
-var rmp_frontend = {"admin_ajax":"https://hisarmak.com.tr/wp-admin/admin-ajax.php","postID":"93017","noVotes":"","cookie":"","afterVote":"","notShowRating":"1","social":"1","feedback":"1","cookieDisable":"1","emptyFeedback":"Please insert your feedback in the box above!","hoverTexts":"2","preventAccidental":"2","grecaptcha":"1","siteKey":"","turnstile":"1","turnstileSiteKey":"","turnstileTheme":"auto","turnstileSize":"normal","votingPriv":"1","loggedIn":"","positiveThreshold":"1","ajaxLoad":"1","disableClearCache":"1","nonce":"f24e1a2e0e","is_not_votable":"false"};
-//# sourceURL=rate-my-post-js-extra
-</script>
-<script type="text/javascript" id="rate-my-post-js" src="https://hisarmak.com.tr/wp-content/plugins/rate-my-post/public/js/rate-my-post.min.js?ver=4.5.2"></script>
-<script type="text/javascript" id="pll_cookie_script-js-after">
-(function() {
-				var expirationDate = new Date();
-				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
-				document.cookie = "pll_language=tr; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
-			}());
-
-//# sourceURL=pll_cookie_script-js-after
-</script>
-<script id="motto-theme-addons-js-extra">
-var wgl_section_settings = [[]];
-//# sourceURL=motto-theme-addons-js-extra
-</script>
-<script type="text/javascript" id="motto-theme-addons-js" src="https://hisarmak.com.tr/wp-content/themes/motto/js/theme-addons.min.js?ver=1.0.1"></script>
-<script id="motto-theme-js-extra">
-var wgl_core = {"ajaxurl":"https://hisarmak.com.tr/wp-admin/admin-ajax.php"};
-//# sourceURL=motto-theme-js-extra
-</script>
-<script type="text/javascript" data-minify="1" id="motto-theme-js" src="https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/themes/motto/js/theme.js?ver=1782741995"></script>
-<script type="text/javascript" data-minify="1" id="wgl-widgets-js" src="https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/plugins/motto-core/includes/elementor/assets/js/wgl_elementor_widgets.js?ver=1782741995"></script>
-<script type="text/javascript" data-minify="1" id="jquery-appear-js" src="https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/themes/motto/js/jquery.appear.js?ver=1782741995"></script>
-<script type="text/javascript" id="smartmenus-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1"></script>
-<script type="text/javascript" id="elementor-pro-webpack-runtime-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.6.4"></script>
-<script type="text/javascript" id="elementor-webpack-runtime-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.23.3"></script>
-<script type="text/javascript" id="elementor-frontend-modules-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.23.3"></script>
-<script type="text/javascript" id="wp-hooks-js" src="https://hisarmak.com.tr/wp-includes/js/dist/hooks.min.js?ver=7496969728ca0f95732d"></script>
-<script type="text/javascript" id="wp-i18n-js" src="https://hisarmak.com.tr/wp-includes/js/dist/i18n.min.js?ver=781d11515ad3d91786ec"></script>
-<script type="text/javascript" id="wp-i18n-js-after">
-wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-//# sourceURL=wp-i18n-js-after
-</script>
-<script type="text/javascript" id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/hisarmak.com.tr\/wp-admin\/admin-ajax.php","nonce":"9ca1d69400","urls":{"assets":"https:\/\/hisarmak.com.tr\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/hisarmak.com.tr\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"tr_TR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/hisarmak.com.tr\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-//# sourceURL=elementor-pro-frontend-js-before
-</script>
-<script type="text/javascript" id="elementor-pro-frontend-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.6.4"></script>
-<script type="text/javascript" id="elementor-waypoints-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"></script>
-<script type="text/javascript" id="jquery-ui-core-js" src="https://hisarmak.com.tr/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
-<script type="text/javascript" id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Facebook\u2019ta payla\u015f","shareOnTwitter":"Twitter\u2019da payla\u015f\u0131n","pinIt":"Sabitle","download":"\u0130ndir","downloadImage":"G\u00f6rseli indir","fullscreen":"Tam Ekran","zoom":"Yak\u0131nla\u015ft\u0131r","share":"Payla\u015f","playVideo":"Videoyu Oynat","previous":"\u00d6nceki","next":"Sonraki","close":"Kapat","a11yCarouselWrapperAriaLabel":"Karuzel | Yatay kayd\u0131rma: Sol ve Sa\u011f Ok","a11yCarouselPrevSlideMessage":"\u00d6nceki Slayt","a11yCarouselNextSlideMessage":"Sonraki Slayt","a11yCarouselFirstSlideMessage":"Bu ilk slayt","a11yCarouselLastSlideMessage":"Bu son slayt","a11yCarouselPaginationBulletMessage":"Slayta Git"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobil Portre","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobil G\u00f6r\u00fcn\u00fcm\u00fc","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portresi","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet G\u00f6r\u00fcn\u00fcm\u00fc","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Diz\u00fcst\u00fc bilgisayar","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Geni\u015f ekran","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.3","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"landing-pages":true,"e_lazyload":true,"page-transitions":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/hisarmak.com.tr\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/hisarmak.com.tr\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"6dba9d69f7"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":93017,"title":"D%C3%B6ner%20Izgaral%C4%B1%20Buhar%20Kazan%C4%B1%20%7C%20Kat%C4%B1%20Yak%C4%B1tl%C4%B1","excerpt":"","featuredImage":"https:\/\/hisarmak.com.tr\/wp-content\/uploads\/2026\/06\/doner-izgarali-su-kazani-hisarmak-1024x1024.webp"}};
-//# sourceURL=elementor-frontend-js-before
-</script>
-<script type="text/javascript" id="elementor-frontend-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.3"></script>
-<script type="text/javascript" id="pro-preloaded-elements-handlers-js" src="https://hisarmak.com.tr/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.6.4"></script>
-<script id="wgl-webgl-fluid-js-extra">
-var webgl_fluid_settings = {"color_type":"simple","color":"#0F0F0F","resolution":"128","velocity":"0.98","density":"0.97","pressure":"0.8","splat_radius":"0.05","backspace_animation":"yes"};
-//# sourceURL=wgl-webgl-fluid-js-extra
-</script>
-<script type="text/javascript" data-minify="1" id="wgl-webgl-fluid-js" src="https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/plugins/motto-core/includes/elementor/assets/js/wgl_webgl_fluid.js?ver=1782741995"></script>
-<script id="wgl-parallax-js-extra">
-var wgl_parallax_settings = {"0":[],"ajaxurl":"https://hisarmak.com.tr/wp-admin/admin-ajax.php","svgURL":"https://hisarmak.com.tr/wp-content/plugins/wgl-extensions/includes/elementor/assets/shapes/","elementorPro":"1"};
-//# sourceURL=wgl-parallax-js-extra
-</script>
-<script type="text/javascript" data-minify="1" id="wgl-parallax-js" src="https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/plugins/wgl-extensions/includes/elementor/assets/js/wgl_elementor_sections.js?ver=1782741995"></script>
-<script id="elementskit-elementor-js-extra">
-var ekit_config = {"ajaxurl":"https://hisarmak.com.tr/wp-admin/admin-ajax.php","nonce":"0481b5632e"};
-//# sourceURL=elementskit-elementor-js-extra
-</script>
-<script type="text/javascript" data-minify="1" id="elementskit-elementor-js" src="https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=1782741995"></script>
-		<div class="rmtfb-wrap" style="--rmtfb-label-bg:#010066;--rmtfb-bubble-bg:#25d366;--rmtfb-text-color:#ffffff;--rmtfb-icon-color:#ffffff;--rmtfb-pulse-color:rgba(37,211,102,0.20);--rmtfb-halo-color:rgba(37,211,102,0.16);--rmtfb-bubble-glow:rgba(37,211,102,0.30);--rmtfb-label-glow:rgba(1,0,102,0.22);--rmtfb-bubble-size:62px;--rmtfb-icon-size:34px;--rmtfb-label-font-size:12px;--rmtfb-label-font-weight:500;">
-			<div class="rmtfb-stack">
-									<a class="rmtfb-call-link rmtfb-track-link" aria-label="Ara: +905331416946" href="tel:+905331416946" data-rmtfb-label="Telefonla Ara" data-rmtfb-url="tel:+905331416946">
-						<span class="rmtfb-call-bubble">
-							<span class="rmtfb-icon" aria-hidden="true"><svg class="rmtfb-phone-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.32.56 3.57.56.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.56 3.57.11.35.03.74-.25 1.02l-2.19 2.2z"></path></svg></span>
-						</span>
-					</a>
-								<a class="rmtfb-link rmtfb-track-link" aria-label="Canlı Destek" href="https://wa.me/905331416946?text=Merhaba,%20bu%20ürün%20hakkında%20bilgi%20almak%20istiyorum:https://hisarmak.com.tr/doner-izgarali-buhar-kazani/" target="_blank" rel="noopener noreferrer" data-rmtfb-label="Canlı Destek" data-rmtfb-url="https://wa.me/905331416946?text=Merhaba,%20bu%20ürün%20hakkında%20bilgi%20almak%20istiyorum:https://hisarmak.com.tr/doner-izgarali-buhar-kazani/" data-rmtfb-whatsapp-base="https://wa.me/905331416946" data-rmtfb-message-prefix="Merhaba, bu ürün hakkında bilgi almak istiyorum:">
-											<span class="rmtfb-label">Canlı Destek</span>
-										<span class="rmtfb-bubble">
-						<span class="rmtfb-pulse rmtfb-pulse-one" aria-hidden="true"></span>
-						<span class="rmtfb-pulse rmtfb-pulse-two" aria-hidden="true"></span>
-						<span class="rmtfb-icon" aria-hidden="true"><svg viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg></span>
-					</span>
-				</a>
-			</div>
-		</div>
-			<script type="text/javascript" id="rmtfb-click-tracking">
-	(function(w,d,c){
-		if(!c||!c.ajaxUrl){return;}
-		var links=d.querySelectorAll('.rmtfb-track-link');
-		if(!links.length){return;}
-		function withWhatsappMessage(baseUrl,prefix){
-			var pageUrl=w.location&&w.location.href?w.location.href:'';
-			var message=(prefix||'Hello, I would like to get information about this product:')+(pageUrl?'\n'+pageUrl:'');
-			var joiner=baseUrl.indexOf('?')===-1?'?':'&';
-			baseUrl=baseUrl.replace(/([?&])text=[^&]*&?/,'$1').replace(/[?&]$/,'');
-			joiner=baseUrl.indexOf('?')===-1?'?':'&';
-			return baseUrl+joiner+'text='+encodeURIComponent(message);
-		}
-		Array.prototype.forEach.call(links,function(link){
-			var baseUrl=link.getAttribute('data-rmtfb-whatsapp-base');
-			if(baseUrl){
-				var url=withWhatsappMessage(baseUrl,link.getAttribute('data-rmtfb-message-prefix')||'');
-				link.href=url;
-				link.setAttribute('data-rmtfb-url',url);
-			}
-		});
-		function buildPayload(link){
-			var data=new URLSearchParams();
-			data.append('action','rmtfb_log_click');
-			data.append('nonce',c.nonce||'');
-			data.append('page_url',w.location.href||'');
-			data.append('page_title',d.title||'');
-			data.append('button_label',link.getAttribute('data-rmtfb-label')||c.buttonLabel||'');
-			data.append('button_url',link.getAttribute('data-rmtfb-url')||c.buttonUrl||link.href||'');
-			data.append('referrer',d.referrer||'');
-			return data;
-		}
-		function logClick(link){
-			var data=buildPayload(link);
-			var body=data.toString();
-
-			if(w.navigator&&typeof w.navigator.sendBeacon==='function'){
-				if(w.navigator.sendBeacon(c.ajaxUrl,new Blob([body],{type:'application/x-www-form-urlencoded; charset=UTF-8'}))){
-					return true;
-				}
-			}
-
-			if(typeof w.fetch==='function'){
-				return w.fetch(c.ajaxUrl,{method:'POST',body:body,headers:{'Content-Type':'application/x-www-form-urlencoded; charset=UTF-8'},credentials:'same-origin',keepalive:true}).catch(function(){});
-			}
-
-			return false;
-		}
-		Array.prototype.forEach.call(links,function(link){
-			link.addEventListener('click',function(event){
-				var href=link.href||link.getAttribute('href')||'';
-				var isCallLink=/^tel:/i.test(href);
-
-				if(!isCallLink){
-					logClick(link);
-					return;
-				}
-
-				event.preventDefault();
-
-				var opened=false;
-				function openCall(){
-					if(opened){return;}
-					opened=true;
-					w.location.href=href;
-				}
-
-				var result=logClick(link);
-				if(result&&typeof result.finally==='function'){
-					result.finally(openCall);
-					w.setTimeout(openCall,350);
-					return;
-				}
-
-				openCall();
-			},{capture:true});
-		});
-	})(window,document,{"ajaxUrl":"https:\/\/hisarmak.com.tr\/wp-admin\/admin-ajax.php","nonce":"4eab64a1e2","buttonLabel":"Canl\u0131 Destek","buttonUrl":"https:\/\/wa.me\/905331416946?text=Merhaba, bu \u00fcr\u00fcn hakk\u0131nda bilgi almak istiyorum:\nhttps:\/\/hisarmak.com.tr\/doner-izgarali-buhar-kazani\/"});
-	</script>
-	    <script type="text/javascript">
-        (function() {
-            var fluidCanvas = document.getElementById('wgl-webgl-fluid');
-            var fluidOuter = document.querySelector('.wgl-canvas-outer');
-
-            if (fluidCanvas) {
-                fluidCanvas.remove();
-            }
-
-            if (fluidOuter) {
-                fluidOuter.remove();
-            }
-
-            window.webgl_fluid_settings = null;
-        })();
-    </script>
-    <script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
-if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
-images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
-if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://hisarmak.com.tr/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
-<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
-<script type="text/javascript" >
-
-jQuery(document).ready(function () {
-
-//Disable cut copy paste
-
-jQuery('body').bind('cut copy paste', function (e) {
-
-e.preventDefault();
-
-});
-
-//Disable mouse right click
-
-jQuery("body").on("contextmenu",function(e){
-
-return false;
-
-});
-
-});
-
-</script>
+  <section class="cta-band">
+    <div class="container reveal">
+      <h2>Detaylı bilgi ve teklif için bizimle iletişime geçin</h2>
+      <p>Uzman ekibimiz projenize en uygun kazan sistemini birlikte belirler.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="buhar-kazani-talep-formu.html">Teklif Formu</a>
+        <a class="btn btn-outline" href="iletisim.html">İletişim</a>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">H</span>
+          <span class="logo-text"><strong>HİSARMAK</strong><span>Industrial Systems</span></span>
+        </a>
+        <p>Endüstriyel kazan ve enerji sistemlerinde güvenilir üretim, montaj ve servis çözümleri.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Hızlı Linkler</h4>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="referanslar.html">Referanslar</a>
+        <a href="destek.html">Destek</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ürünler</h4>
+        <a href="buhar-kazani.html">Buhar Kazanları</a>
+        <a href="kizgin-yag-kazani.html">Kızgın Yağ Kazanları</a>
+        <a href="sicak-su-kazani.html">Sıcak Su Kazanları</a>
+        <a href="buhar-jeneratoru.html">Buhar Jeneratörleri</a>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <a href="tel:+905331416946">0 (533) 141 69 46</a>
+        <a href="mailto:satis@hisarmak.com.tr">satis@hisarmak.com.tr</a>
+        <a href="kvkk-ve-gizlilik-politikasi.html">KVKK</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 HİSARMAK. Tüm hakları saklıdır.</span>
+      <span>Güvenilir Enerji, Sürdürülebilir Gelecek</span>
+    </div>
+  </footer>
+  <button class="back-top" aria-label="Yukarı çık"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg></button>
+  <script src="js/main.js"></script>
+</body>
 </html>
-<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1782748425 -->
