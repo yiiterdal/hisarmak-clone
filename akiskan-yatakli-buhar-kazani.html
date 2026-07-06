@@ -99,6 +99,70 @@ div#ez-toc-container .ez-toc-title {font-size: 110%;}div#ez-toc-container .ez-to
 .elementor-container > .elementor-row > .elementor-column > .elementor-element-populated,.elementor-container > .elementor-column > .elementor-element-populated {padding-top: 0;padding-bottom: 0;}.elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated,.elementor-column-gap-default > .elementor-column > .theiaStickySidebar > .elementor-element-populated,.elementor-column-gap-default > .elementor-column > .elementor-element-populated {padding-left: 15px;padding-right: 15px;}
 /*# sourceURL=elementor-frontend-inline-css */
 </style>
+<style id="carousel-arrows-css">
+.elementor-widget-image-carousel .elementor-image-carousel-wrapper {
+	position: relative;
+}
+.elementor-widget-image-carousel .elementor-swiper-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background: rgba(12, 58, 92, 0.72);
+	color: #fff;
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+.elementor-widget-image-carousel .elementor-swiper-button:hover {
+	background: #c8102e;
+}
+.elementor-widget-image-carousel .elementor-swiper-button-prev {
+	left: 12px;
+}
+.elementor-widget-image-carousel .elementor-swiper-button-next {
+	right: 12px;
+}
+.elementor-widget-image-carousel .elementor-swiper-button svg {
+	width: 18px;
+	height: 18px;
+	fill: currentColor;
+}
+.elementor-widget-image-carousel .elementor-swiper-button.swiper-button-disabled {
+	display: none;
+	pointer-events: none;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style id="detail-heading-fonts-css">
+.page-header.page-header_align_center .page-header_content {
+	text-align: left !important;
+}
+.page-header .page-header_title {
+	font-family: Poppins, sans-serif !important;
+	font-weight: 700 !important;
+	font-size: 36px !important;
+	line-height: 42px !important;
+	text-transform: uppercase !important;
+	color: #0c3a5c !important;
+	letter-spacing: 0 !important;
+}
+.site-main .ekit-heading--title.elementskit-section-title {
+	font-family: Poppins, sans-serif !important;
+	font-weight: 600 !important;
+	font-size: 28px !important;
+	line-height: 36px !important;
+	color: #0c3a5c !important;
+	letter-spacing: 0 !important;
+}
+</style>
 <link data-minify="1" rel='stylesheet' id='swiper-css' href='https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1782741974' media='all' />
 <link data-minify="1" rel='stylesheet' id='elementor-post-14-css' href='https://hisarmak.com.tr/wp-content/cache/min/1/wp-content/uploads/elementor/css/post-14.css?ver=1782741974' media='all' />
 <link rel='stylesheet' id='elementor-pro-css' href='https://hisarmak.com.tr/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.6.4' media='all' />
@@ -864,12 +928,19 @@ footer a {
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-13ace0e9" data-id="13ace0e9" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-						<div class="elementor-element elementor-element-55a1b9b2 elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="55a1b9b2" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;dots&quot;,&quot;autoplay_speed&quot;:4000,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+						<div class="elementor-element elementor-element-55a1b9b2 elementor-pagination-position-outside elementor-arrows-position-inside elementor-widget elementor-widget-image-carousel" data-id="55a1b9b2" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay_speed&quot;:4000,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
 			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-1-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-1-hisarmak"  /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-1-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-1-hisarmak" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-2-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-2-hisarmak"  /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-2-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-2-hisarmak" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-4-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-4-hisarmak"  /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-4-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-4-hisarmak" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 / 5"><figure class="swiper-slide-inner"><img data-no-lazy="1" decoding="async" fetchpriority="high" loading="eager" width="1080" height="1080" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-main.webp" alt="akışkan-yataklı-buhar-kazanı-main" /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-main.webp" alt="akışkan-yataklı-buhar-kazanı-main" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-5-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-5-hisarmak"  /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-5-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-5-hisarmak" /></noscript></figure></div>			</div>
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-1-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-1-hisarmak"  /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-1-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-1-hisarmak" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-2-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-2-hisarmak"  /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-2-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-2-hisarmak" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="images/akiskan-yatakli-buhar-kazani-3.png" alt="Akışkan yataklı buhar kazanı" style="object-fit:cover;width:100%;height:100%;" /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="images/akiskan-yatakli-buhar-kazani-3.png" alt="Akışkan yataklı buhar kazanı" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 / 5"><figure class="swiper-slide-inner"><img data-no-lazy="1" decoding="async" fetchpriority="high" loading="eager" width="1080" height="1080" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-main.webp" alt="akışkan-yataklı-buhar-kazanı-main" /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-main.webp" alt="akışkan-yataklı-buhar-kazanı-main" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 / 5"><figure class="swiper-slide-inner"><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-5-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-5-hisarmak"  /><noscript><img width="1080" height="1080" decoding="async" class="swiper-slide-image" src="https://hisarmak.com.tr/wp-content/uploads/2026/06/akiskan-yatakli-buhar-kazani-5-hisarmak.webp" alt="akışkan-yataklı-buhar-kazanı-5-hisarmak" /></noscript></figure></div>			</div>
 							
+									
+					<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0" aria-label="Önceki">
+						<svg aria-hidden="true" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M697 125L296 498l401 373-59 54-457-427 457-427z"></path></svg>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0" aria-label="Sonraki">
+						<svg aria-hidden="true" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M303 125l401 373-401 373 59 54 457-427-457-427z"></path></svg>
+					</div>
 									<div class="swiper-pagination"></div>
 									</div>
 				</div>
